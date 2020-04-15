@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="jumbotron">
+        <h1 style="text-align: center">Details form</h1>
+        <form id="myform" >
+            Name<input class="form-control" type="text" name="name" id="name" [(ngModel)]="singleuser.name">
+            <br>
+            Address<textarea class="form-control" cols="8" id="address" name="address" rows="1" [(ngModel)]="singleuser.address"></textarea>
+            <br>
+            PAN<input class="form-control" type="text" id="pan" name="pan" [(ngModel)]="singleuser.pan">
+            <br>
+            DoB<input class="form-control" type="date" id="dob" name="dob" [(ngModel)]="singleuser.dob">
+            <br>
+            <br>
+            <input (click)="updateUser()" class="btn btn-primary" type="submit" value="Update">
+            <input class="btn btn-primary" type="reset" value="Reset">
+        </form>
+    </div>
+</div>
